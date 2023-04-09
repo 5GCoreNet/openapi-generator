@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="3.451" tests="48" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="git.build.version" value="6.6.0-SNAPSHOT"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/var/maven/.m2/repository/org/apache/maven/surefire/surefire-booter/3.0.0-M6/surefire-booter-3.0.0-M6.jar:/var/maven/.m2/repository/org/apache/maven/surefire/surefire-api/3.0.0-M6/surefire-api-3.0.0-M6.jar:/var/maven/.m2/repository/org/apache/maven/surefire/surefire-logger-api/3.0.0-M6/surefire-logger-api-3.0.0-M6.jar:/var/maven/.m2/repository/org/apache/maven/surefire/surefire-shared-utils/3.0.0-M6/surefire-shared-utils-3.0.0-M6.jar:/var/maven/.m2/repository/org/apache/maven/surefire/surefire-extensions-spi/3.0.0-M6/surefire-extensions-spi-3.0.0-M6.jar:/gen/modules/openapi-generator-cli/target/test-classes:/gen/modules/openapi-generator-cli/target/classes:/gen/modules/openapi-generator/target/openapi-generator-6.6.0-SNAPSHOT.jar:/var/maven/.m2/repository/io/swagger/parser/v3/swagger-parser/2.1.6/swagger-parser-2.1.6.jar:/var/maven/.m2/repository/io/swagger/parser/v3/swagger-parser-v2-converter/2.1.6/swagger-parser-v2-converter-2.1.6.jar:/var/maven/.m2/repository/io/swagger/swagger-core/1.6.8/swagger-core-1.6.8.jar:/var/maven/.m2/repository/io/swagger/swagger-models/1.6.8/swagger-models-1.6.8.jar:/var/maven/.m2/repository/io/swagger/swagger-annotations/1.6.8/swagger-annotations-1.6.8.jar:/var/maven/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar:/var/maven/.m2/repository/io/swagger/swagger-parser/1.0.63/swagger-parser-1.0.63.jar:/var/maven/.m2/repository/io/swagger/swagger-compat-spec-parser/1.0.63/swagger-compat-spec-parser-1.0.63.jar:/var/maven/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/var/maven/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/var/maven/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/var/maven/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/var/maven/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/var/maven/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/var/maven/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/var/maven/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/var/maven/.m2/repository/com/github/java-json-tools/json-patch/1.13/json-patch-1.13.jar:/var/maven/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/var/maven/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/var/maven/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/var/maven/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/var/maven/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/var/maven/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/var/maven/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/var/maven/.m2/repository/io/swagger/core/v3/swagger-models/2.2.4/swagger-models-2.2.4.jar:/var/maven/.m2/repository/io/swagger/parser/v3/swagger-parser-core/2.1.6/swagger-parser-core-2.1.6.jar:/var/maven/.m2/repository/io/swagger/parser/v3/swagger-parser-v3/2.1.6/swagger-parser-v3-2.1.6.jar:/var/maven/.m2/repository/io/swagger/core/v3/swagger-core/2.2.4/swagger-core-2.2.4.jar:/var/maven/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.2/jakarta.xml.bind-api-2.3.2.jar:/var/maven/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1.jar:/var/maven/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.4/jackson-datatype-jsr310-2.13.4.jar:/var/maven/.m2/repository/io/swagger/core/v3/swagger-annotations/2.2.4/swagger-annotations-2.2.4.jar:/var/maven/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/var/maven/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.13.4/jackson-dataformat-yaml-2.13.4.jar:/var/maven/.m2/repository/org/yaml/snakeyaml/1.33/snakeyaml-1.33.jar:/var/maven/.m2/repository/com/samskivert/jmustache/1.15/jmustache-1.15.jar:/var/maven/.m2/repository/com/github/jknack/handlebars/4.2.1/handlebars-4.2.1.jar:/var/maven/.m2/repository/com/github/jknack/handlebars-jackson2/4.2.1/handlebars-jackson2-4.2.1.jar:/var/maven/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/var/maven/.m2/repository/org/slf4j/slf4j-ext/1.7.36/slf4j-ext-1.7.36.jar:/var/maven/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/var/maven/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/var/maven/.m2/repository/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0.jar:/var/maven/.m2/repository/commons-cli/commons-cli/1.5.0/commons-cli-1.5.0.jar:/var/maven/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/var/maven/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/var/maven/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/var/maven/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/var/maven/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/var/maven/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/var/maven/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-guava/2.14.0/jackson-datatype-guava-2.14.0.jar:/var/maven/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.0/jackson-core-2.14.0.jar:/var/maven/.m2/repository/org/commonmark/commonmark/0.21.0/commonmark-0.21.0.jar:/var/maven/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/var/maven/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/var/maven/.m2/repository/com/github/curious-odd-man/rgxgen/1.4/rgxgen-1.4.jar:/var/maven/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.0/jackson-databind-2.14.0.jar:/var/maven/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.0/jackson-annotations-2.14.0.jar:/var/maven/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-joda/2.14.0/jackson-datatype-joda-2.14.0.jar:/var/maven/.m2/repository/joda-time/joda-time/2.10.8/joda-time-2.10.8.jar:/var/maven/.m2/repository/com/github/joschi/jackson/jackson-datatype-threetenbp/2.12.5/jackson-datatype-threetenbp-2.12.5.jar:/var/maven/.m2/repository/org/threeten/threetenbp/1.5.1/threetenbp-1.5.1.jar:/gen/modules/openapi-generator-core/target/openapi-generator-core-6.6.0-SNAPSHOT.jar:/var/maven/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/var/maven/.m2/repository/com/github/ben-manes/caffeine/caffeine/2.9.3/caffeine-2.9.3.jar:/var/maven/.m2/repository/io/airlift/airline/0.9/airline-0.9.jar:/var/maven/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/var/maven/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/var/maven/.m2/repository/com/googlecode/lambdaj/lambdaj/2.3.3/lambdaj-2.3.3.jar:/var/maven/.m2/repository/org/hamcrest/hamcrest-all/1.1/hamcrest-all-1.1.jar:/var/maven/.m2/repository/org/objenesis/objenesis/1.2/objenesis-1.2.jar:/var/maven/.m2/repository/cglib/cglib-nodep/2.2/cglib-nodep-2.2.jar:/var/maven/.m2/repository/ch/qos/logback/logback-classic/1.2.11/logback-classic-1.2.11.jar:/var/maven/.m2/repository/ch/qos/logback/logback-core/1.2.11/logback-core-1.2.11.jar:/var/maven/.m2/repository/org/codehaus/janino/janino/3.1.9/janino-3.1.9.jar:/var/maven/.m2/repository/org/codehaus/janino/commons-compiler/3.1.9/commons-compiler-3.1.9.jar:/var/maven/.m2/repository/org/testng/testng/7.5/testng-7.5.jar:/var/maven/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/var/maven/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:/var/maven/.m2/repository/org/mockito/mockito-core/4.10.0/mockito-core-4.10.0.jar:/var/maven/.m2/repository/net/bytebuddy/byte-buddy/1.12.19/byte-buddy-1.12.19.jar:/var/maven/.m2/repository/net/bytebuddy/byte-buddy-agent/1.12.19/byte-buddy-agent-1.12.19.jar:/var/maven/.m2/repository/org/apache/maven/surefire/surefire-testng/3.0.0-M6/surefire-testng-3.0.0-M6.jar:/var/maven/.m2/repository/org/apache/maven/surefire/common-java5/3.0.0-M6/common-java5-3.0.0-M6.jar:/var/maven/.m2/repository/org/apache/maven/surefire/surefire-testng-utils/3.0.0-M6/surefire-testng-utils-3.0.0-M6.jar:/var/maven/.m2/repository/org/apache/maven/surefire/surefire-grouper/3.0.0-M6/surefire-grouper-3.0.0-M6.jar"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Etc/UTC"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/local/openjdk-8/jre/lib/amd64"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter /gen/modules/openapi-generator-cli/target/surefire 2023-04-09T10-13-53_025-jvmRun1 surefire5051115866199531674tmp surefire_22416937232357675733tmp"/>
+    <property name="surefire.test.class.path" value="/gen/modules/openapi-generator-cli/target/test-classes:/gen/modules/openapi-generator-cli/target/classes:/gen/modules/openapi-generator/target/openapi-generator-6.6.0-SNAPSHOT.jar:/var/maven/.m2/repository/io/swagger/parser/v3/swagger-parser/2.1.6/swagger-parser-2.1.6.jar:/var/maven/.m2/repository/io/swagger/parser/v3/swagger-parser-v2-converter/2.1.6/swagger-parser-v2-converter-2.1.6.jar:/var/maven/.m2/repository/io/swagger/swagger-core/1.6.8/swagger-core-1.6.8.jar:/var/maven/.m2/repository/io/swagger/swagger-models/1.6.8/swagger-models-1.6.8.jar:/var/maven/.m2/repository/io/swagger/swagger-annotations/1.6.8/swagger-annotations-1.6.8.jar:/var/maven/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar:/var/maven/.m2/repository/io/swagger/swagger-parser/1.0.63/swagger-parser-1.0.63.jar:/var/maven/.m2/repository/io/swagger/swagger-compat-spec-parser/1.0.63/swagger-compat-spec-parser-1.0.63.jar:/var/maven/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/var/maven/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/var/maven/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/var/maven/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/var/maven/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/var/maven/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/var/maven/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/var/maven/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/var/maven/.m2/repository/com/github/java-json-tools/json-patch/1.13/json-patch-1.13.jar:/var/maven/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/var/maven/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/var/maven/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/var/maven/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/var/maven/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/var/maven/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/var/maven/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/var/maven/.m2/repository/io/swagger/core/v3/swagger-models/2.2.4/swagger-models-2.2.4.jar:/var/maven/.m2/repository/io/swagger/parser/v3/swagger-parser-core/2.1.6/swagger-parser-core-2.1.6.jar:/var/maven/.m2/repository/io/swagger/parser/v3/swagger-parser-v3/2.1.6/swagger-parser-v3-2.1.6.jar:/var/maven/.m2/repository/io/swagger/core/v3/swagger-core/2.2.4/swagger-core-2.2.4.jar:/var/maven/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.2/jakarta.xml.bind-api-2.3.2.jar:/var/maven/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1.jar:/var/maven/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.4/jackson-datatype-jsr310-2.13.4.jar:/var/maven/.m2/repository/io/swagger/core/v3/swagger-annotations/2.2.4/swagger-annotations-2.2.4.jar:/var/maven/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/var/maven/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.13.4/jackson-dataformat-yaml-2.13.4.jar:/var/maven/.m2/repository/org/yaml/snakeyaml/1.33/snakeyaml-1.33.jar:/var/maven/.m2/repository/com/samskivert/jmustache/1.15/jmustache-1.15.jar:/var/maven/.m2/repository/com/github/jknack/handlebars/4.2.1/handlebars-4.2.1.jar:/var/maven/.m2/repository/com/github/jknack/handlebars-jackson2/4.2.1/handlebars-jackson2-4.2.1.jar:/var/maven/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/var/maven/.m2/repository/org/slf4j/slf4j-ext/1.7.36/slf4j-ext-1.7.36.jar:/var/maven/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/var/maven/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/var/maven/.m2/repository/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0.jar:/var/maven/.m2/repository/commons-cli/commons-cli/1.5.0/commons-cli-1.5.0.jar:/var/maven/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/var/maven/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/var/maven/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/var/maven/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/var/maven/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/var/maven/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/var/maven/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-guava/2.14.0/jackson-datatype-guava-2.14.0.jar:/var/maven/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.0/jackson-core-2.14.0.jar:/var/maven/.m2/repository/org/commonmark/commonmark/0.21.0/commonmark-0.21.0.jar:/var/maven/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/var/maven/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/var/maven/.m2/repository/com/github/curious-odd-man/rgxgen/1.4/rgxgen-1.4.jar:/var/maven/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.0/jackson-databind-2.14.0.jar:/var/maven/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.0/jackson-annotations-2.14.0.jar:/var/maven/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-joda/2.14.0/jackson-datatype-joda-2.14.0.jar:/var/maven/.m2/repository/joda-time/joda-time/2.10.8/joda-time-2.10.8.jar:/var/maven/.m2/repository/com/github/joschi/jackson/jackson-datatype-threetenbp/2.12.5/jackson-datatype-threetenbp-2.12.5.jar:/var/maven/.m2/repository/org/threeten/threetenbp/1.5.1/threetenbp-1.5.1.jar:/gen/modules/openapi-generator-core/target/openapi-generator-core-6.6.0-SNAPSHOT.jar:/var/maven/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/var/maven/.m2/repository/com/github/ben-manes/caffeine/caffeine/2.9.3/caffeine-2.9.3.jar:/var/maven/.m2/repository/io/airlift/airline/0.9/airline-0.9.jar:/var/maven/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/var/maven/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/var/maven/.m2/repository/com/googlecode/lambdaj/lambdaj/2.3.3/lambdaj-2.3.3.jar:/var/maven/.m2/repository/org/hamcrest/hamcrest-all/1.1/hamcrest-all-1.1.jar:/var/maven/.m2/repository/org/objenesis/objenesis/1.2/objenesis-1.2.jar:/var/maven/.m2/repository/cglib/cglib-nodep/2.2/cglib-nodep-2.2.jar:/var/maven/.m2/repository/ch/qos/logback/logback-classic/1.2.11/logback-classic-1.2.11.jar:/var/maven/.m2/repository/ch/qos/logback/logback-core/1.2.11/logback-core-1.2.11.jar:/var/maven/.m2/repository/org/codehaus/janino/janino/3.1.9/janino-3.1.9.jar:/var/maven/.m2/repository/org/codehaus/janino/commons-compiler/3.1.9/commons-compiler-3.1.9.jar:/var/maven/.m2/repository/org/testng/testng/7.5/testng-7.5.jar:/var/maven/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/var/maven/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:/var/maven/.m2/repository/org/mockito/mockito-core/4.10.0/mockito-core-4.10.0.jar:/var/maven/.m2/repository/net/bytebuddy/byte-buddy/1.12.19/byte-buddy-1.12.19.jar:/var/maven/.m2/repository/net/bytebuddy/byte-buddy-agent/1.12.19/byte-buddy-agent-1.12.19.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/root"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/usr/local/openjdk-8/jre"/>
+    <property name="basedir" value="/gen/modules/openapi-generator-cli"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="git.commit.id.full" value="f7d9479437432d431dd5eaf9638ea25a848bf229"/>
+    <property name="org.openapitools.codegen.utils.oncelogger.cachesize" value="5000"/>
+    <property name="git.build.time" value="2023-04-09T10:13:57+0000"/>
+    <property name="sun.boot.class.path" value="/usr/local/openjdk-8/jre/lib/resources.jar:/usr/local/openjdk-8/jre/lib/rt.jar:/usr/local/openjdk-8/jre/lib/sunrsasign.jar:/usr/local/openjdk-8/jre/lib/jsse.jar:/usr/local/openjdk-8/jre/lib/jce.jar:/usr/local/openjdk-8/jre/lib/charsets.jar:/usr/local/openjdk-8/jre/lib/jfr.jar:/usr/local/openjdk-8/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_342-b07"/>
+    <property name="user.name" value="root"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.2.10-arch1-1"/>
+    <property name="java.endorsed.dirs" value="/usr/local/openjdk-8/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/var/maven/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="org.openapitools.codegen.utils.oncelogger.expiry" value="1000"/>
+    <property name="java.version" value="1.8.0_342"/>
+    <property name="user.dir" value="/gen/modules/openapi-generator-cli"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="git.commit.id.abbrev" value="f7d9479"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.342-b07"/>
+    <property name="java.ext.dirs" value="/usr/local/openjdk-8/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="smokeTestAuthorTemplateCommand" classname="org.openapitools.codegen.cmd.AuthorTemplateTest" time="0.393">
+    <system-out><![CDATA[[TestNG-test=Surefire test-1] INFO  o.o.codegen.cmd.AuthorTemplate - Extracted templates to '/tmp/AuthorTemplateTest5336627562054320581' directory. Refer to https://openapi-generator.tech/docs/templating for customization details.
+]]></system-out>
+  </testcase>
+  <testcase name="testDeserializerWithJsonInclude[jaxrs-datelib-j8.json](1)" classname="org.openapitools.codegen.cmd.GenerateBatchTest" time="0.458"/>
+  <testcase name="testDeserializerWithJsonInclude[jaxrs-datelib-j8.yaml](2)" classname="org.openapitools.codegen.cmd.GenerateBatchTest" time="0.043"/>
+  <testcase name="testDeserializerWithJsonInclude[jaxrs-datelib-j8-json-include.yaml](3)" classname="org.openapitools.codegen.cmd.GenerateBatchTest" time="0.038"/>
+  <testcase name="testDeserializerWithJsonInclude[jaxrs-datelib-j8-double.json](4)" classname="org.openapitools.codegen.cmd.GenerateBatchTest" time="0.025"/>
+  <testcase name="testDeserializerWithJsonInclude[jaxrs-datelib-j8-double.yaml](5)" classname="org.openapitools.codegen.cmd.GenerateBatchTest" time="0.031"/>
+  <testcase name="testDeserializerWithJsonInclude[jaxrs-datelib-j8-nested.json](6)" classname="org.openapitools.codegen.cmd.GenerateBatchTest" time="0.026"/>
+  <testcase name="testDeserializerWithJsonInclude[jaxrs-datelib-j8-nested.yaml](7)" classname="org.openapitools.codegen.cmd.GenerateBatchTest" time="0.02"/>
+  <testcase name="testDeserializerWithJsonInclude[jaxrs-datelib-j8-nested-property-merge.yaml](8)" classname="org.openapitools.codegen.cmd.GenerateBatchTest" time="0.028"/>
+  <testcase name="testInvalidDeserializerWithIncludeOption" classname="org.openapitools.codegen.cmd.GenerateBatchTest" time="0.009">
+    <system-err><![CDATA[[TestNG-test=Surefire test-1] ERROR o.o.c.config.CodegenConfigurator - Unexpected character ('-' (code 45)) in numeric value: expected digit (0-9) to follow minus sign, for valid numeric value
+ at [Source: (File); line: 1, column: 3]
+[TestNG-test=Surefire test-1] ERROR o.o.c.config.CodegenConfigurator - Unexpected character ('-' (code 45)) in numeric value: expected digit (0-9) to follow minus sign, for valid numeric value
+ at [Source: (File); line: 1, column: 3]
+]]></system-err>
+  </testcase>
+  <testcase name="testAdditionalPropertiesLong" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.049"/>
+  <testcase name="testAdditionalPropertiesLongMultiple" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.023"/>
+  <testcase name="testApiPackage" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.021"/>
+  <testcase name="testArtifactId" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.027"/>
+  <testcase name="testArtifactVersion" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.018"/>
+  <testcase name="testAuthLong" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.018"/>
+  <testcase name="testAuthShort" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.018"/>
+  <testcase name="testAuthUnspecified" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.023"/>
+  <testcase name="testConfigJsonLong" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.022"/>
+  <testcase name="testConfigJsonShort" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.016"/>
+  <testcase name="testConfigYamlLong" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.019"/>
+  <testcase name="testConfigYamlShort" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.021"/>
+  <testcase name="testGroupId" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.019"/>
+  <testcase name="testImportMappingsLong" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.02"/>
+  <testcase name="testImportMappingsLongMultiple" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.02"/>
+  <testcase name="testInstantiationTypesLong" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.02"/>
+  <testcase name="testInstantiationTypesLongMultiple" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.02"/>
+  <testcase name="testInvokerPackage" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.019"/>
+  <testcase name="testLanguageSpecificPrimitives" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.018"/>
+  <testcase name="testLibrary" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.018"/>
+  <testcase name="testModelPackage" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.017"/>
+  <testcase name="testNPEWithInvalidSpecFile" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.064">
+    <system-out><![CDATA[[TestNG-test=Surefire test-1] WARN  io.swagger.v3.parser.OpenAPIV3Parser - Exception while resolving:
+java.lang.NullPointerException: null
+	at io.swagger.v3.parser.processors.SchemaProcessor.processArraySchema(SchemaProcessor.java:219)
+	at io.swagger.v3.parser.processors.SchemaProcessor.processSchemaType(SchemaProcessor.java:70)
+	at io.swagger.v3.parser.processors.SchemaProcessor.processPropertySchema(SchemaProcessor.java:140)
+	at io.swagger.v3.parser.processors.SchemaProcessor.processSchemaType(SchemaProcessor.java:77)
+	at io.swagger.v3.parser.processors.SchemaProcessor.processSchema(SchemaProcessor.java:62)
+	at io.swagger.v3.parser.processors.ResponseProcessor.processResponse(ResponseProcessor.java:56)
+	at io.swagger.v3.parser.processors.OperationProcessor.processOperation(OperationProcessor.java:86)
+	at io.swagger.v3.parser.processors.PathsProcessor.processPaths(PathsProcessor.java:88)
+	at io.swagger.v3.parser.OpenAPIResolver.resolve(OpenAPIResolver.java:72)
+	at io.swagger.v3.parser.OpenAPIResolver.resolve(OpenAPIResolver.java:59)
+	at io.swagger.v3.parser.OpenAPIV3Parser.resolve(OpenAPIV3Parser.java:226)
+	at io.swagger.v3.parser.OpenAPIV3Parser.readContents(OpenAPIV3Parser.java:178)
+	at io.swagger.v3.parser.OpenAPIV3Parser.readLocation(OpenAPIV3Parser.java:94)
+	at io.swagger.parser.OpenAPIParser.readLocation(OpenAPIParser.java:16)
+	at org.openapitools.codegen.config.CodegenConfigurator.toContext(CodegenConfigurator.java:589)
+	at org.openapitools.codegen.config.CodegenConfigurator$MockitoMock$PWYkZynU.toContext$accessor$IPrB00MW(Unknown Source)
+	at org.openapitools.codegen.config.CodegenConfigurator$MockitoMock$PWYkZynU$auxiliary$2kmNXEzR.call(Unknown Source)
+	at org.mockito.internal.invocation.RealMethod$FromCallable$1.call(RealMethod.java:40)
+	at org.mockito.internal.invocation.RealMethod$FromBehavior.invoke(RealMethod.java:62)
+	at org.mockito.internal.invocation.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:142)
+	at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:45)
+	at org.mockito.Answers.answer(Answers.java:90)
+	at org.mockito.internal.handler.MockHandlerImpl.handle(MockHandlerImpl.java:111)
+	at org.mockito.internal.handler.NullResultGuardian.handle(NullResultGuardian.java:29)
+	at org.mockito.internal.handler.InvocationNotifierHandler.handle(InvocationNotifierHandler.java:34)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:82)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:56)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor$DispatcherDefaultingToRealMethod.interceptSuperCallable(MockMethodInterceptor.java:145)
+	at org.openapitools.codegen.config.CodegenConfigurator$MockitoMock$PWYkZynU.toContext(Unknown Source)
+	at org.openapitools.codegen.config.CodegenConfigurator.toClientOptInput(CodegenConfigurator.java:647)
+	at org.openapitools.codegen.config.CodegenConfigurator$MockitoMock$PWYkZynU.toClientOptInput$accessor$IPrB00MW(Unknown Source)
+	at org.openapitools.codegen.config.CodegenConfigurator$MockitoMock$PWYkZynU$auxiliary$unFhTrBD.call(Unknown Source)
+	at org.mockito.internal.invocation.RealMethod$FromCallable$1.call(RealMethod.java:40)
+	at org.mockito.internal.invocation.RealMethod$FromBehavior.invoke(RealMethod.java:62)
+	at org.mockito.internal.invocation.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:142)
+	at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:45)
+	at org.mockito.Answers.answer(Answers.java:90)
+	at org.mockito.internal.handler.MockHandlerImpl.handle(MockHandlerImpl.java:111)
+	at org.mockito.internal.handler.NullResultGuardian.handle(NullResultGuardian.java:29)
+	at org.mockito.internal.handler.InvocationNotifierHandler.handle(InvocationNotifierHandler.java:34)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:82)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:56)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor$DispatcherDefaultingToRealMethod.interceptSuperCallable(MockMethodInterceptor.java:145)
+	at org.openapitools.codegen.config.CodegenConfigurator$MockitoMock$PWYkZynU.toClientOptInput(Unknown Source)
+	at org.openapitools.codegen.cmd.Generate.execute(Generate.java:479)
+	at org.openapitools.codegen.cmd.OpenApiGeneratorCommand.run(OpenApiGeneratorCommand.java:32)
+	at org.openapitools.codegen.cmd.GenerateTest.setupAndRunTest(GenerateTest.java:122)
+	at org.openapitools.codegen.cmd.GenerateTest.testNPEWithInvalidSpecFile(GenerateTest.java:441)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+]]></system-out>
+    <system-err><![CDATA[[error] There is an error with OpenAPI specification parsed from the input spec file: src/test/resources/npe-test.yaml
+[error] Please make sure the spec file has correct format and all required fields are populated with valid value.
+]]></system-err>
+  </testcase>
+  <testcase name="testPackageName" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.014"/>
+  <testcase name="testRequiredArgs_LongArgs" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.016"/>
+  <testcase name="testRequiredArgs_ShortArgs" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.015"/>
+  <testcase name="testSkipOverwriteLong" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.012"/>
+  <testcase name="testSkipOverwriteShort" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.016"/>
+  <testcase name="testStrictSpecFalse" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.013"/>
+  <testcase name="testStrictSpecTrue" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.016"/>
+  <testcase name="testTemplateDirLong" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.019"/>
+  <testcase name="testTemplateDirMustExist" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.003"/>
+  <testcase name="testTemplateDirShort" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.018"/>
+  <testcase name="testTypeMappingsLong" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.014"/>
+  <testcase name="testTypeMappingsLongMultiple" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.012"/>
+  <testcase name="testVerboseLong" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.016">
+    <system-out><![CDATA[[TestNG-test=Surefire test-1] INFO  o.o.c.config.CodegenConfigurator - 
+VERBOSE MODE: ON. Additional debug options are injected
+ - [debugOpenAPI] prints the OpenAPI specification as interpreted by the codegen
+ - [debugModels] prints models passed to the template engine
+ - [debugOperations] prints operations passed to the template engine
+ - [debugSupportingFiles] prints additional data passed to the template engine
+]]></system-out>
+  </testcase>
+  <testcase name="testVerboseShort" classname="org.openapitools.codegen.cmd.GenerateTest" time="0.018">
+    <system-out><![CDATA[[TestNG-test=Surefire test-1] INFO  o.o.c.config.CodegenConfigurator - 
+VERBOSE MODE: ON. Additional debug options are injected
+ - [debugOpenAPI] prints the OpenAPI specification as interpreted by the codegen
+ - [debugModels] prints models passed to the template engine
+ - [debugOperations] prints operations passed to the template engine
+ - [debugSupportingFiles] prints additional data passed to the template engine
+]]></system-out>
+  </testcase>
+  <testcase name="splitCommaSeparatedList" classname="org.openapitools.codegen.cmd.utils.OptionUtilsTest" time="0.002"/>
+  <testcase name="testParseCommaSeparatedTuples" classname="org.openapitools.codegen.cmd.utils.OptionUtilsTest" time="0"/>
+</testsuite>

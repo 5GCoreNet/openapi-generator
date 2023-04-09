@@ -1,0 +1,4 @@
+org/openapitools/codegen/plugin/stubs/CommonMavenProjectStub.class
+org/openapitools/codegen/plugin/BaseTestCase.class
+org/openapitools/codegen/plugin/stubs/StubUtility.class
+org/openapitools/codegen/plugin/CodeGenMojoTest.class

@@ -1,0 +1,4 @@
+org/openapitools/codegen/cmd/AuthorTemplateTest.class
+org/openapitools/codegen/cmd/GenerateTest.class
+org/openapitools/codegen/cmd/GenerateBatchTest.class
+org/openapitools/codegen/cmd/utils/OptionUtilsTest.class

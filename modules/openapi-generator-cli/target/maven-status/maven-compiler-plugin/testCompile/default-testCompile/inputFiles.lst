@@ -1,0 +1,4 @@
+/gen/modules/openapi-generator-cli/src/test/java/org/openapitools/codegen/cmd/utils/OptionUtilsTest.java
+/gen/modules/openapi-generator-cli/src/test/java/org/openapitools/codegen/cmd/GenerateTest.java
+/gen/modules/openapi-generator-cli/src/test/java/org/openapitools/codegen/cmd/GenerateBatchTest.java
+/gen/modules/openapi-generator-cli/src/test/java/org/openapitools/codegen/cmd/AuthorTemplateTest.java

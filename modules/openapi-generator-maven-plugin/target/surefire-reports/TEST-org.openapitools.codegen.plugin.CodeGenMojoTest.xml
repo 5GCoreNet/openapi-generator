@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.openapitools.codegen.plugin.CodeGenMojoTest" time="4.089" tests="4" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="git.build.version" value="6.6.0-SNAPSHOT"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/var/maven/.m2/repository/org/apache/maven/surefire/surefire-booter/3.0.0-M6/surefire-booter-3.0.0-M6.jar:/var/maven/.m2/repository/org/apache/maven/surefire/surefire-api/3.0.0-M6/surefire-api-3.0.0-M6.jar:/var/maven/.m2/repository/org/apache/maven/surefire/surefire-logger-api/3.0.0-M6/surefire-logger-api-3.0.0-M6.jar:/var/maven/.m2/repository/org/apache/maven/surefire/surefire-shared-utils/3.0.0-M6/surefire-shared-utils-3.0.0-M6.jar:/var/maven/.m2/repository/org/apache/maven/surefire/surefire-extensions-spi/3.0.0-M6/surefire-extensions-spi-3.0.0-M6.jar:/gen/modules/openapi-generator-maven-plugin/target/test-classes:/gen/modules/openapi-generator-maven-plugin/target/classes:/var/maven/.m2/repository/org/sonatype/plexus/plexus-build-api/0.0.7/plexus-build-api-0.0.7.jar:/var/maven/.m2/repository/org/apache/maven/maven-core/3.8.6/maven-core-3.8.6.jar:/var/maven/.m2/repository/org/apache/maven/maven-model/3.8.6/maven-model-3.8.6.jar:/var/maven/.m2/repository/org/apache/maven/maven-settings/3.8.6/maven-settings-3.8.6.jar:/var/maven/.m2/repository/org/apache/maven/maven-settings-builder/3.8.6/maven-settings-builder-3.8.6.jar:/var/maven/.m2/repository/org/codehaus/plexus/plexus-sec-dispatcher/2.0/plexus-sec-dispatcher-2.0.jar:/var/maven/.m2/repository/org/codehaus/plexus/plexus-cipher/2.0/plexus-cipher-2.0.jar:/var/maven/.m2/repository/org/apache/maven/maven-builder-support/3.8.6/maven-builder-support-3.8.6.jar:/var/maven/.m2/repository/org/apache/maven/maven-repository-metadata/3.8.6/maven-repository-metadata-3.8.6.jar:/var/maven/.m2/repository/org/apache/maven/maven-model-builder/3.8.6/maven-model-builder-3.8.6.jar:/var/maven/.m2/repository/org/apache/maven/maven-resolver-provider/3.8.6/maven-resolver-provider-3.8.6.jar:/var/maven/.m2/repository/org/apache/maven/resolver/maven-resolver-impl/1.6.3/maven-resolver-impl-1.6.3.jar:/var/maven/.m2/repository/org/apache/maven/resolver/maven-resolver-api/1.6.3/maven-resolver-api-1.6.3.jar:/var/maven/.m2/repository/org/apache/maven/resolver/maven-resolver-spi/1.6.3/maven-resolver-spi-1.6.3.jar:/var/maven/.m2/repository/org/apache/maven/resolver/maven-resolver-util/1.6.3/maven-resolver-util-1.6.3.jar:/var/maven/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.3.4/maven-shared-utils-3.3.4.jar:/var/maven/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.5/org.eclipse.sisu.plexus-0.3.5.jar:/var/maven/.m2/repository/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar:/var/maven/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.5/org.eclipse.sisu.inject-0.3.5.jar:/var/maven/.m2/repository/com/google/inject/guice/4.2.2/guice-4.2.2-no_aop.jar:/var/maven/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/var/maven/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/var/maven/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.6.0/plexus-classworlds-2.6.0.jar:/var/maven/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.26/plexus-interpolation-1.26.jar:/var/maven/.m2/repository/org/codehaus/plexus/plexus-component-annotations/2.1.0/plexus-component-annotations-2.1.0.jar:/var/maven/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/var/maven/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/var/maven/.m2/repository/org/apache/maven/maven-artifact/3.8.6/maven-artifact-3.8.6.jar:/var/maven/.m2/repository/org/apache/maven/maven-compat/3.8.6/maven-compat-3.8.6.jar:/var/maven/.m2/repository/org/apache/maven/wagon/wagon-provider-api/3.5.1/wagon-provider-api-3.5.1.jar:/var/maven/.m2/repository/org/apache/maven/maven-plugin-api/3.8.6/maven-plugin-api-3.8.6.jar:/var/maven/.m2/repository/org/apache/maven/plugin-tools/maven-plugin-annotations/3.6.4/maven-plugin-annotations-3.6.4.jar:/gen/modules/openapi-generator/target/openapi-generator-6.6.0-SNAPSHOT.jar:/var/maven/.m2/repository/io/swagger/parser/v3/swagger-parser/2.1.6/swagger-parser-2.1.6.jar:/var/maven/.m2/repository/io/swagger/parser/v3/swagger-parser-v2-converter/2.1.6/swagger-parser-v2-converter-2.1.6.jar:/var/maven/.m2/repository/io/swagger/swagger-core/1.6.8/swagger-core-1.6.8.jar:/var/maven/.m2/repository/io/swagger/swagger-models/1.6.8/swagger-models-1.6.8.jar:/var/maven/.m2/repository/io/swagger/swagger-annotations/1.6.8/swagger-annotations-1.6.8.jar:/var/maven/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar:/var/maven/.m2/repository/io/swagger/swagger-parser/1.0.63/swagger-parser-1.0.63.jar:/var/maven/.m2/repository/io/swagger/swagger-compat-spec-parser/1.0.63/swagger-compat-spec-parser-1.0.63.jar:/var/maven/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/var/maven/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/var/maven/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/var/maven/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/var/maven/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/var/maven/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/var/maven/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/var/maven/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/var/maven/.m2/repository/com/github/java-json-tools/json-patch/1.13/json-patch-1.13.jar:/var/maven/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/var/maven/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/var/maven/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/var/maven/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/var/maven/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/var/maven/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/var/maven/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/var/maven/.m2/repository/io/swagger/core/v3/swagger-models/2.2.4/swagger-models-2.2.4.jar:/var/maven/.m2/repository/io/swagger/parser/v3/swagger-parser-core/2.1.6/swagger-parser-core-2.1.6.jar:/var/maven/.m2/repository/io/swagger/parser/v3/swagger-parser-v3/2.1.6/swagger-parser-v3-2.1.6.jar:/var/maven/.m2/repository/io/swagger/core/v3/swagger-core/2.2.4/swagger-core-2.2.4.jar:/var/maven/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.2/jakarta.xml.bind-api-2.3.2.jar:/var/maven/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1.jar:/var/maven/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.4/jackson-datatype-jsr310-2.13.4.jar:/var/maven/.m2/repository/io/swagger/core/v3/swagger-annotations/2.2.4/swagger-annotations-2.2.4.jar:/var/maven/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/var/maven/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.13.4/jackson-dataformat-yaml-2.13.4.jar:/var/maven/.m2/repository/org/yaml/snakeyaml/1.33/snakeyaml-1.33.jar:/var/maven/.m2/repository/com/samskivert/jmustache/1.15/jmustache-1.15.jar:/var/maven/.m2/repository/com/github/jknack/handlebars/4.2.1/handlebars-4.2.1.jar:/var/maven/.m2/repository/com/github/jknack/handlebars-jackson2/4.2.1/handlebars-jackson2-4.2.1.jar:/var/maven/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/var/maven/.m2/repository/org/slf4j/slf4j-ext/1.7.36/slf4j-ext-1.7.36.jar:/var/maven/.m2/repository/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.jar:/var/maven/.m2/repository/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0.jar:/var/maven/.m2/repository/commons-cli/commons-cli/1.5.0/commons-cli-1.5.0.jar:/var/maven/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/var/maven/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/var/maven/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/var/maven/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/var/maven/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/var/maven/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/var/maven/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/var/maven/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-guava/2.14.0/jackson-datatype-guava-2.14.0.jar:/var/maven/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.0/jackson-core-2.14.0.jar:/var/maven/.m2/repository/org/commonmark/commonmark/0.21.0/commonmark-0.21.0.jar:/var/maven/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/var/maven/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/var/maven/.m2/repository/com/github/curious-odd-man/rgxgen/1.4/rgxgen-1.4.jar:/var/maven/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.0/jackson-databind-2.14.0.jar:/var/maven/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.0/jackson-annotations-2.14.0.jar:/var/maven/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-joda/2.14.0/jackson-datatype-joda-2.14.0.jar:/var/maven/.m2/repository/joda-time/joda-time/2.10.8/joda-time-2.10.8.jar:/var/maven/.m2/repository/com/github/joschi/jackson/jackson-datatype-threetenbp/2.12.5/jackson-datatype-threetenbp-2.12.5.jar:/var/maven/.m2/repository/org/threeten/threetenbp/1.5.1/threetenbp-1.5.1.jar:/gen/modules/openapi-generator-core/target/openapi-generator-core-6.6.0-SNAPSHOT.jar:/var/maven/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/var/maven/.m2/repository/com/github/ben-manes/caffeine/caffeine/2.9.3/caffeine-2.9.3.jar:/var/maven/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/var/maven/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/var/maven/.m2/repository/org/apache/maven/shared/maven-verifier/1.8.0/maven-verifier-1.8.0.jar:/var/maven/.m2/repository/org/apache/maven/plugin-testing/maven-plugin-testing-harness/3.3.0/maven-plugin-testing-harness-3.3.0.jar:/var/maven/.m2/repository/org/codehaus/plexus/plexus-archiver/2.2/plexus-archiver-2.2.jar:/var/maven/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.jar:/var/maven/.m2/repository/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar:/var/maven/.m2/repository/org/codehaus/plexus/plexus-io/2.0.4/plexus-io-2.0.4.jar:/var/maven/.m2/repository/org/codehaus/plexus/plexus-utils/3.5.0/plexus-utils-3.5.0.jar:/var/maven/.m2/repository/org/apache/maven/surefire/surefire-junit3/3.0.0-M6/surefire-junit3-3.0.0-M6.jar:/var/maven/.m2/repository/org/apache/maven/surefire/common-java5/3.0.0-M6/common-java5-3.0.0-M6.jar:/var/maven/.m2/repository/org/apache/maven/surefire/common-junit3/3.0.0-M6/common-junit3-3.0.0-M6.jar"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/local/openjdk-8/jre/lib/amd64"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter /gen/modules/openapi-generator-maven-plugin/target/surefire 2023-04-09T10-13-53_025-jvmRun1 surefire782606526326902506tmp surefire_35636330024415983221tmp"/>
+    <property name="surefire.test.class.path" value="/gen/modules/openapi-generator-maven-plugin/target/test-classes:/gen/modules/openapi-generator-maven-plugin/target/classes:/var/maven/.m2/repository/org/sonatype/plexus/plexus-build-api/0.0.7/plexus-build-api-0.0.7.jar:/var/maven/.m2/repository/org/apache/maven/maven-core/3.8.6/maven-core-3.8.6.jar:/var/maven/.m2/repository/org/apache/maven/maven-model/3.8.6/maven-model-3.8.6.jar:/var/maven/.m2/repository/org/apache/maven/maven-settings/3.8.6/maven-settings-3.8.6.jar:/var/maven/.m2/repository/org/apache/maven/maven-settings-builder/3.8.6/maven-settings-builder-3.8.6.jar:/var/maven/.m2/repository/org/codehaus/plexus/plexus-sec-dispatcher/2.0/plexus-sec-dispatcher-2.0.jar:/var/maven/.m2/repository/org/codehaus/plexus/plexus-cipher/2.0/plexus-cipher-2.0.jar:/var/maven/.m2/repository/org/apache/maven/maven-builder-support/3.8.6/maven-builder-support-3.8.6.jar:/var/maven/.m2/repository/org/apache/maven/maven-repository-metadata/3.8.6/maven-repository-metadata-3.8.6.jar:/var/maven/.m2/repository/org/apache/maven/maven-model-builder/3.8.6/maven-model-builder-3.8.6.jar:/var/maven/.m2/repository/org/apache/maven/maven-resolver-provider/3.8.6/maven-resolver-provider-3.8.6.jar:/var/maven/.m2/repository/org/apache/maven/resolver/maven-resolver-impl/1.6.3/maven-resolver-impl-1.6.3.jar:/var/maven/.m2/repository/org/apache/maven/resolver/maven-resolver-api/1.6.3/maven-resolver-api-1.6.3.jar:/var/maven/.m2/repository/org/apache/maven/resolver/maven-resolver-spi/1.6.3/maven-resolver-spi-1.6.3.jar:/var/maven/.m2/repository/org/apache/maven/resolver/maven-resolver-util/1.6.3/maven-resolver-util-1.6.3.jar:/var/maven/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.3.4/maven-shared-utils-3.3.4.jar:/var/maven/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.5/org.eclipse.sisu.plexus-0.3.5.jar:/var/maven/.m2/repository/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar:/var/maven/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.5/org.eclipse.sisu.inject-0.3.5.jar:/var/maven/.m2/repository/com/google/inject/guice/4.2.2/guice-4.2.2-no_aop.jar:/var/maven/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/var/maven/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/var/maven/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.6.0/plexus-classworlds-2.6.0.jar:/var/maven/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.26/plexus-interpolation-1.26.jar:/var/maven/.m2/repository/org/codehaus/plexus/plexus-component-annotations/2.1.0/plexus-component-annotations-2.1.0.jar:/var/maven/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/var/maven/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/var/maven/.m2/repository/org/apache/maven/maven-artifact/3.8.6/maven-artifact-3.8.6.jar:/var/maven/.m2/repository/org/apache/maven/maven-compat/3.8.6/maven-compat-3.8.6.jar:/var/maven/.m2/repository/org/apache/maven/wagon/wagon-provider-api/3.5.1/wagon-provider-api-3.5.1.jar:/var/maven/.m2/repository/org/apache/maven/maven-plugin-api/3.8.6/maven-plugin-api-3.8.6.jar:/var/maven/.m2/repository/org/apache/maven/plugin-tools/maven-plugin-annotations/3.6.4/maven-plugin-annotations-3.6.4.jar:/gen/modules/openapi-generator/target/openapi-generator-6.6.0-SNAPSHOT.jar:/var/maven/.m2/repository/io/swagger/parser/v3/swagger-parser/2.1.6/swagger-parser-2.1.6.jar:/var/maven/.m2/repository/io/swagger/parser/v3/swagger-parser-v2-converter/2.1.6/swagger-parser-v2-converter-2.1.6.jar:/var/maven/.m2/repository/io/swagger/swagger-core/1.6.8/swagger-core-1.6.8.jar:/var/maven/.m2/repository/io/swagger/swagger-models/1.6.8/swagger-models-1.6.8.jar:/var/maven/.m2/repository/io/swagger/swagger-annotations/1.6.8/swagger-annotations-1.6.8.jar:/var/maven/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar:/var/maven/.m2/repository/io/swagger/swagger-parser/1.0.63/swagger-parser-1.0.63.jar:/var/maven/.m2/repository/io/swagger/swagger-compat-spec-parser/1.0.63/swagger-compat-spec-parser-1.0.63.jar:/var/maven/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/var/maven/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/var/maven/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/var/maven/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/var/maven/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/var/maven/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/var/maven/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/var/maven/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/var/maven/.m2/repository/com/github/java-json-tools/json-patch/1.13/json-patch-1.13.jar:/var/maven/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/var/maven/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/var/maven/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/var/maven/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/var/maven/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/var/maven/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/var/maven/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/var/maven/.m2/repository/io/swagger/core/v3/swagger-models/2.2.4/swagger-models-2.2.4.jar:/var/maven/.m2/repository/io/swagger/parser/v3/swagger-parser-core/2.1.6/swagger-parser-core-2.1.6.jar:/var/maven/.m2/repository/io/swagger/parser/v3/swagger-parser-v3/2.1.6/swagger-parser-v3-2.1.6.jar:/var/maven/.m2/repository/io/swagger/core/v3/swagger-core/2.2.4/swagger-core-2.2.4.jar:/var/maven/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.2/jakarta.xml.bind-api-2.3.2.jar:/var/maven/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1.jar:/var/maven/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.4/jackson-datatype-jsr310-2.13.4.jar:/var/maven/.m2/repository/io/swagger/core/v3/swagger-annotations/2.2.4/swagger-annotations-2.2.4.jar:/var/maven/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/var/maven/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.13.4/jackson-dataformat-yaml-2.13.4.jar:/var/maven/.m2/repository/org/yaml/snakeyaml/1.33/snakeyaml-1.33.jar:/var/maven/.m2/repository/com/samskivert/jmustache/1.15/jmustache-1.15.jar:/var/maven/.m2/repository/com/github/jknack/handlebars/4.2.1/handlebars-4.2.1.jar:/var/maven/.m2/repository/com/github/jknack/handlebars-jackson2/4.2.1/handlebars-jackson2-4.2.1.jar:/var/maven/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/var/maven/.m2/repository/org/slf4j/slf4j-ext/1.7.36/slf4j-ext-1.7.36.jar:/var/maven/.m2/repository/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.jar:/var/maven/.m2/repository/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0.jar:/var/maven/.m2/repository/commons-cli/commons-cli/1.5.0/commons-cli-1.5.0.jar:/var/maven/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/var/maven/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/var/maven/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/var/maven/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/var/maven/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/var/maven/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/var/maven/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/var/maven/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-guava/2.14.0/jackson-datatype-guava-2.14.0.jar:/var/maven/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.0/jackson-core-2.14.0.jar:/var/maven/.m2/repository/org/commonmark/commonmark/0.21.0/commonmark-0.21.0.jar:/var/maven/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/var/maven/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/var/maven/.m2/repository/com/github/curious-odd-man/rgxgen/1.4/rgxgen-1.4.jar:/var/maven/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.0/jackson-databind-2.14.0.jar:/var/maven/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.0/jackson-annotations-2.14.0.jar:/var/maven/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-joda/2.14.0/jackson-datatype-joda-2.14.0.jar:/var/maven/.m2/repository/joda-time/joda-time/2.10.8/joda-time-2.10.8.jar:/var/maven/.m2/repository/com/github/joschi/jackson/jackson-datatype-threetenbp/2.12.5/jackson-datatype-threetenbp-2.12.5.jar:/var/maven/.m2/repository/org/threeten/threetenbp/1.5.1/threetenbp-1.5.1.jar:/gen/modules/openapi-generator-core/target/openapi-generator-core-6.6.0-SNAPSHOT.jar:/var/maven/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/var/maven/.m2/repository/com/github/ben-manes/caffeine/caffeine/2.9.3/caffeine-2.9.3.jar:/var/maven/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/var/maven/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/var/maven/.m2/repository/org/apache/maven/shared/maven-verifier/1.8.0/maven-verifier-1.8.0.jar:/var/maven/.m2/repository/org/apache/maven/plugin-testing/maven-plugin-testing-harness/3.3.0/maven-plugin-testing-harness-3.3.0.jar:/var/maven/.m2/repository/org/codehaus/plexus/plexus-archiver/2.2/plexus-archiver-2.2.jar:/var/maven/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.jar:/var/maven/.m2/repository/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar:/var/maven/.m2/repository/org/codehaus/plexus/plexus-io/2.0.4/plexus-io-2.0.4.jar:/var/maven/.m2/repository/org/codehaus/plexus/plexus-utils/3.5.0/plexus-utils-3.5.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/root"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/usr/local/openjdk-8/jre"/>
+    <property name="basedir" value="/gen/modules/openapi-generator-maven-plugin"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="git.commit.id.full" value="f7d9479437432d431dd5eaf9638ea25a848bf229"/>
+    <property name="org.openapitools.codegen.utils.oncelogger.cachesize" value="5000"/>
+    <property name="git.build.time" value="2023-04-09T10:13:57+0000"/>
+    <property name="sun.boot.class.path" value="/usr/local/openjdk-8/jre/lib/resources.jar:/usr/local/openjdk-8/jre/lib/rt.jar:/usr/local/openjdk-8/jre/lib/sunrsasign.jar:/usr/local/openjdk-8/jre/lib/jsse.jar:/usr/local/openjdk-8/jre/lib/jce.jar:/usr/local/openjdk-8/jre/lib/charsets.jar:/usr/local/openjdk-8/jre/lib/jfr.jar:/usr/local/openjdk-8/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_342-b07"/>
+    <property name="user.name" value="root"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.2.10-arch1-1"/>
+    <property name="java.endorsed.dirs" value="/usr/local/openjdk-8/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/var/maven/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="org.openapitools.codegen.utils.oncelogger.expiry" value="1000"/>
+    <property name="java.version" value="1.8.0_342"/>
+    <property name="user.dir" value="/gen/modules/openapi-generator-maven-plugin"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="git.commit.id.abbrev" value="f7d9479"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.342-b07"/>
+    <property name="java.ext.dirs" value="/usr/local/openjdk-8/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="testSkipRegenerationForClasspathSpecFileNoChange" classname="org.openapitools.codegen.plugin.CodeGenMojoTest" time="2.447">
+    <system-out><![CDATA[################################################################################
+# Thanks for using OpenAPI Generator.                                          #
+# Please consider donation to help us maintain this project 🙏                 #
+# https://opencollective.com/openapi_generator/donate                          #
+################################################################################
+[info] Code generation is skipped because input was unchanged
+]]></system-out>
+    <system-err><![CDATA[[main] INFO org.openapitools.codegen.DefaultGenerator - Generating with dryRun=false
+[main] INFO org.openapitools.codegen.ignore.CodegenIgnoreProcessor - Output directory (/tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi) does not exist, or is inaccessible. No file (.openapi-generator-ignore) will be evaluated.
+[main] INFO org.openapitools.codegen.DefaultGenerator - OpenAPI Generator: java (client)
+[main] INFO org.openapitools.codegen.DefaultGenerator - Generator 'java' is considered stable.
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Environment variable JAVA_POST_PROCESS_FILE not defined so the Java code may not be properly formatted. To define it, try 'export JAVA_POST_PROCESS_FILE="/usr/local/bin/clang-format -i"' (Linux/Mac)
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - NOTE: To enable file post-processing, 'enablePostProcessFile' must be set to `true` (--enable-post-process-file for CLI).
+[main] INFO org.openapitools.codegen.InlineModelResolver - Inline schema created as updatePetWithForm_request. To have complete control of the model name, set the `title` field or use the inlineSchemaNameMapping option (--inline-schema-name-mappings in CLI).
+[main] INFO org.openapitools.codegen.InlineModelResolver - Inline schema created as uploadFile_request. To have complete control of the model name, set the `title` field or use the inlineSchemaNameMapping option (--inline-schema-name-mappings in CLI).
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation updatePet
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/json)
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation addPet
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/json)
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation findPetsByStatus
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation findPetsByTags
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation getPetById
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation updatePetWithForm
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation deletePet
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation uploadFile
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation getInventory
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation placeOrder
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation getOrderById
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation deleteOrder
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation createUser
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation createUsersWithArrayInput
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation createUsersWithListInput
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation loginUser
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation logoutUser
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation getUserByName
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation updateUser
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation deleteUser
+[main] WARN org.openapitools.codegen.languages.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+[main] INFO org.openapitools.codegen.DefaultGenerator - Model updatePetWithForm_request not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO org.openapitools.codegen.DefaultGenerator - Model uploadFile_request not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/Category.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/model/CategoryTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/docs/Category.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/ModelApiResponse.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/model/ModelApiResponseTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/docs/ModelApiResponse.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/Order.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/model/OrderTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/docs/Order.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/Pet.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/model/PetTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/docs/Pet.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/Tag.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/model/TagTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/docs/Tag.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/User.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/model/UserTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/docs/User.md
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/json)
+[main] WARN org.openapitools.codegen.languages.AbstractJavaCodegen - Multiple MediaTypes found, using only the first one
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/json)
+[main] WARN org.openapitools.codegen.languages.AbstractJavaCodegen - Multiple MediaTypes found, using only the first one
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/api/PetApi.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/api/PetApiTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/docs/PetApi.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/api/StoreApi.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/api/StoreApiTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/docs/StoreApi.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/api/UserApi.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/api/UserApiTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/docs/UserApi.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/pom.xml
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/README.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/build.gradle
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/build.sbt
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/settings.gradle
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/gradle.properties
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/main/AndroidManifest.xml
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/.travis.yml
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/ApiClient.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/ServerConfiguration.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/ServerVariable.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/.github/workflows/maven.yml
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/api/openapi.yaml
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/StringUtil.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/auth/HttpBasicAuth.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/auth/HttpBearerAuth.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/auth/ApiKeyAuth.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/gradlew
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/gradlew.bat
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/gradle/wrapper/gradle-wrapper.properties
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/gradle/wrapper/gradle-wrapper.jar
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/git_push.sh
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/.gitignore
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/ApiException.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/Configuration.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/Pair.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/auth/Authentication.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/JSON.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/ApiResponse.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/AbstractOpenApiSchema.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/RFC3339DateFormat.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/auth/OAuth.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/auth/OAuthFlow.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/.openapi-generator-ignore
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/.openapi-generator/VERSION
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath6092774084507390100/target/generated-sources/common-maven/remote-openapi/.openapi-generator/FILES
+]]></system-err>
+  </testcase>
+  <testcase name="testHashGenerationFileContainsExecutionId" classname="org.openapitools.codegen.plugin.CodeGenMojoTest" time="0.57">
+    <system-out><![CDATA[################################################################################
+# Thanks for using OpenAPI Generator.                                          #
+# Please consider donation to help us maintain this project 🙏                 #
+# https://opencollective.com/openapi_generator/donate                          #
+################################################################################
+]]></system-out>
+    <system-err><![CDATA[[main] INFO org.openapitools.codegen.DefaultGenerator - Generating with dryRun=false
+[main] INFO org.openapitools.codegen.ignore.CodegenIgnoreProcessor - Output directory (/tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi) does not exist, or is inaccessible. No file (.openapi-generator-ignore) will be evaluated.
+[main] INFO org.openapitools.codegen.DefaultGenerator - OpenAPI Generator: java (client)
+[main] INFO org.openapitools.codegen.DefaultGenerator - Generator 'java' is considered stable.
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Environment variable JAVA_POST_PROCESS_FILE not defined so the Java code may not be properly formatted. To define it, try 'export JAVA_POST_PROCESS_FILE="/usr/local/bin/clang-format -i"' (Linux/Mac)
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - NOTE: To enable file post-processing, 'enablePostProcessFile' must be set to `true` (--enable-post-process-file for CLI).
+[main] INFO org.openapitools.codegen.InlineModelResolver - Inline schema created as updatePetWithForm_request. To have complete control of the model name, set the `title` field or use the inlineSchemaNameMapping option (--inline-schema-name-mappings in CLI).
+[main] INFO org.openapitools.codegen.InlineModelResolver - Inline schema created as uploadFile_request. To have complete control of the model name, set the `title` field or use the inlineSchemaNameMapping option (--inline-schema-name-mappings in CLI).
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation updatePet
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/json)
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation addPet
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/json)
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation findPetsByStatus
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation findPetsByTags
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation getPetById
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation updatePetWithForm
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation deletePet
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation uploadFile
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation getInventory
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation placeOrder
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation getOrderById
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation deleteOrder
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation createUser
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation createUsersWithArrayInput
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation createUsersWithListInput
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation loginUser
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation logoutUser
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation getUserByName
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation updateUser
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation deleteUser
+[main] WARN org.openapitools.codegen.languages.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+[main] INFO org.openapitools.codegen.DefaultGenerator - Model updatePetWithForm_request not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO org.openapitools.codegen.DefaultGenerator - Model uploadFile_request not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/Category.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/model/CategoryTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/docs/Category.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/ModelApiResponse.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/model/ModelApiResponseTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/docs/ModelApiResponse.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/Order.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/model/OrderTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/docs/Order.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/Pet.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/model/PetTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/docs/Pet.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/Tag.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/model/TagTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/docs/Tag.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/User.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/model/UserTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/docs/User.md
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/json)
+[main] WARN org.openapitools.codegen.languages.AbstractJavaCodegen - Multiple MediaTypes found, using only the first one
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/json)
+[main] WARN org.openapitools.codegen.languages.AbstractJavaCodegen - Multiple MediaTypes found, using only the first one
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/api/PetSuffix.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/api/PetSuffixTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/docs/PetSuffix.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/api/StoreSuffix.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/api/StoreSuffixTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/docs/StoreSuffix.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/api/UserSuffix.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/api/UserSuffixTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/docs/UserSuffix.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/pom.xml
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/README.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/build.gradle
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/build.sbt
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/settings.gradle
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/gradle.properties
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/main/AndroidManifest.xml
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/.travis.yml
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/ApiClient.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/ServerConfiguration.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/ServerVariable.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/.github/workflows/maven.yml
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/api/openapi.yaml
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/StringUtil.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/auth/HttpBasicAuth.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/auth/HttpBearerAuth.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/auth/ApiKeyAuth.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/gradlew
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/gradlew.bat
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/gradle/wrapper/gradle-wrapper.properties
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/gradle/wrapper/gradle-wrapper.jar
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/git_push.sh
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/.gitignore
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/ApiException.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/Configuration.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/Pair.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/auth/Authentication.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/JSON.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/ApiResponse.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/AbstractOpenApiSchema.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/RFC3339DateFormat.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/auth/OAuth.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/auth/OAuthFlow.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/.openapi-generator-ignore
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/.openapi-generator/VERSION
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test2305316577538466319/target/generated-sources/common-maven/remote-openapi/.openapi-generator/FILES
+]]></system-err>
+  </testcase>
+  <testcase name="testCommonConfiguration" classname="org.openapitools.codegen.plugin.CodeGenMojoTest" time="0.398">
+    <system-out><![CDATA[################################################################################
+# Thanks for using OpenAPI Generator.                                          #
+# Please consider donation to help us maintain this project 🙏                 #
+# https://opencollective.com/openapi_generator/donate                          #
+################################################################################
+]]></system-out>
+    <system-err><![CDATA[[main] INFO org.openapitools.codegen.DefaultGenerator - Generating with dryRun=false
+[main] INFO org.openapitools.codegen.ignore.CodegenIgnoreProcessor - Output directory (/tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi) does not exist, or is inaccessible. No file (.openapi-generator-ignore) will be evaluated.
+[main] INFO org.openapitools.codegen.DefaultGenerator - OpenAPI Generator: java (client)
+[main] INFO org.openapitools.codegen.DefaultGenerator - Generator 'java' is considered stable.
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Environment variable JAVA_POST_PROCESS_FILE not defined so the Java code may not be properly formatted. To define it, try 'export JAVA_POST_PROCESS_FILE="/usr/local/bin/clang-format -i"' (Linux/Mac)
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - NOTE: To enable file post-processing, 'enablePostProcessFile' must be set to `true` (--enable-post-process-file for CLI).
+[main] INFO org.openapitools.codegen.InlineModelResolver - Inline schema created as updatePetWithForm_request. To have complete control of the model name, set the `title` field or use the inlineSchemaNameMapping option (--inline-schema-name-mappings in CLI).
+[main] INFO org.openapitools.codegen.InlineModelResolver - Inline schema created as uploadFile_request. To have complete control of the model name, set the `title` field or use the inlineSchemaNameMapping option (--inline-schema-name-mappings in CLI).
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation updatePet
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/json)
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation addPet
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/json)
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation findPetsByStatus
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation findPetsByTags
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation getPetById
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation updatePetWithForm
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation deletePet
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation uploadFile
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation getInventory
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation placeOrder
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation getOrderById
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation deleteOrder
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation createUser
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation createUsersWithArrayInput
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation createUsersWithListInput
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation loginUser
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation logoutUser
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation getUserByName
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation updateUser
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation deleteUser
+[main] WARN org.openapitools.codegen.languages.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+[main] INFO org.openapitools.codegen.DefaultGenerator - Model updatePetWithForm_request not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO org.openapitools.codegen.DefaultGenerator - Model uploadFile_request not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/Category.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/model/CategoryTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/docs/Category.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/ModelApiResponse.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/model/ModelApiResponseTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/docs/ModelApiResponse.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/Order.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/model/OrderTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/docs/Order.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/Pet.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/model/PetTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/docs/Pet.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/Tag.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/model/TagTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/docs/Tag.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/User.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/model/UserTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/docs/User.md
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/json)
+[main] WARN org.openapitools.codegen.languages.AbstractJavaCodegen - Multiple MediaTypes found, using only the first one
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/json)
+[main] WARN org.openapitools.codegen.languages.AbstractJavaCodegen - Multiple MediaTypes found, using only the first one
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/api/PetSuffix.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/api/PetSuffixTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/docs/PetSuffix.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/api/StoreSuffix.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/api/StoreSuffixTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/docs/StoreSuffix.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/api/UserSuffix.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/api/UserSuffixTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/docs/UserSuffix.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/pom.xml
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/README.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/build.gradle
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/build.sbt
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/settings.gradle
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/gradle.properties
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/main/AndroidManifest.xml
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/.travis.yml
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/ApiClient.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/ServerConfiguration.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/ServerVariable.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/.github/workflows/maven.yml
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/api/openapi.yaml
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/StringUtil.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/auth/HttpBasicAuth.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/auth/HttpBearerAuth.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/auth/ApiKeyAuth.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/gradlew
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/gradlew.bat
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/gradle/wrapper/gradle-wrapper.properties
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/gradle/wrapper/gradle-wrapper.jar
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/git_push.sh
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/.gitignore
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/ApiException.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/Configuration.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/Pair.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/auth/Authentication.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/JSON.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/ApiResponse.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/AbstractOpenApiSchema.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/RFC3339DateFormat.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/auth/OAuth.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/auth/OAuthFlow.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/.openapi-generator-ignore
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/.openapi-generator/VERSION
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test1749063683270568318/target/generated-sources/common-maven/remote-openapi/.openapi-generator/FILES
+]]></system-err>
+  </testcase>
+  <testcase name="testSkipRegenerationForClasspathSpecFileWithChange" classname="org.openapitools.codegen.plugin.CodeGenMojoTest" time="0.634">
+    <system-out><![CDATA[################################################################################
+# Thanks for using OpenAPI Generator.                                          #
+# Please consider donation to help us maintain this project 🙏                 #
+# https://opencollective.com/openapi_generator/donate                          #
+################################################################################
+################################################################################
+# Thanks for using OpenAPI Generator.                                          #
+# Please consider donation to help us maintain this project 🙏                 #
+# https://opencollective.com/openapi_generator/donate                          #
+################################################################################
+]]></system-out>
+    <system-err><![CDATA[[main] INFO org.openapitools.codegen.DefaultGenerator - Generating with dryRun=false
+[main] INFO org.openapitools.codegen.ignore.CodegenIgnoreProcessor - Output directory (/tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi) does not exist, or is inaccessible. No file (.openapi-generator-ignore) will be evaluated.
+[main] INFO org.openapitools.codegen.DefaultGenerator - OpenAPI Generator: java (client)
+[main] INFO org.openapitools.codegen.DefaultGenerator - Generator 'java' is considered stable.
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Environment variable JAVA_POST_PROCESS_FILE not defined so the Java code may not be properly formatted. To define it, try 'export JAVA_POST_PROCESS_FILE="/usr/local/bin/clang-format -i"' (Linux/Mac)
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - NOTE: To enable file post-processing, 'enablePostProcessFile' must be set to `true` (--enable-post-process-file for CLI).
+[main] INFO org.openapitools.codegen.InlineModelResolver - Inline schema created as updatePetWithForm_request. To have complete control of the model name, set the `title` field or use the inlineSchemaNameMapping option (--inline-schema-name-mappings in CLI).
+[main] INFO org.openapitools.codegen.InlineModelResolver - Inline schema created as uploadFile_request. To have complete control of the model name, set the `title` field or use the inlineSchemaNameMapping option (--inline-schema-name-mappings in CLI).
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation updatePet
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/json)
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation addPet
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/json)
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation findPetsByStatus
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation findPetsByTags
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation getPetById
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation updatePetWithForm
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation deletePet
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation uploadFile
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation getInventory
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation placeOrder
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation getOrderById
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation deleteOrder
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation createUser
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation createUsersWithArrayInput
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation createUsersWithListInput
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation loginUser
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation logoutUser
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation getUserByName
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation updateUser
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation deleteUser
+[main] WARN org.openapitools.codegen.languages.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+[main] INFO org.openapitools.codegen.DefaultGenerator - Model updatePetWithForm_request not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO org.openapitools.codegen.DefaultGenerator - Model uploadFile_request not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/Category.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/model/CategoryTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/docs/Category.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/ModelApiResponse.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/model/ModelApiResponseTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/docs/ModelApiResponse.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/Order.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/model/OrderTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/docs/Order.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/Pet.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/model/PetTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/docs/Pet.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/Tag.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/model/TagTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/docs/Tag.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/User.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/model/UserTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/docs/User.md
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/json)
+[main] WARN org.openapitools.codegen.languages.AbstractJavaCodegen - Multiple MediaTypes found, using only the first one
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/json)
+[main] WARN org.openapitools.codegen.languages.AbstractJavaCodegen - Multiple MediaTypes found, using only the first one
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/api/PetApi.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/api/PetApiTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/docs/PetApi.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/api/StoreApi.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/api/StoreApiTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/docs/StoreApi.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/api/UserApi.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/api/UserApiTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/docs/UserApi.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/pom.xml
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/README.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/build.gradle
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/build.sbt
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/settings.gradle
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/gradle.properties
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/AndroidManifest.xml
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/.travis.yml
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/ApiClient.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/ServerConfiguration.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/ServerVariable.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/.github/workflows/maven.yml
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/api/openapi.yaml
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/StringUtil.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/auth/HttpBasicAuth.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/auth/HttpBearerAuth.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/auth/ApiKeyAuth.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/gradlew
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/gradlew.bat
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/gradle/wrapper/gradle-wrapper.properties
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/gradle/wrapper/gradle-wrapper.jar
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/git_push.sh
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/.gitignore
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/ApiException.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/Configuration.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/Pair.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/auth/Authentication.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/JSON.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/ApiResponse.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/AbstractOpenApiSchema.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/RFC3339DateFormat.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/auth/OAuth.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/auth/OAuthFlow.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/.openapi-generator-ignore
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/.openapi-generator/VERSION
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/.openapi-generator/FILES
+[main] INFO org.openapitools.codegen.DefaultGenerator - Generating with dryRun=false
+[main] INFO org.openapitools.codegen.DefaultGenerator - OpenAPI Generator: java (client)
+[main] INFO org.openapitools.codegen.DefaultGenerator - Generator 'java' is considered stable.
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Environment variable JAVA_POST_PROCESS_FILE not defined so the Java code may not be properly formatted. To define it, try 'export JAVA_POST_PROCESS_FILE="/usr/local/bin/clang-format -i"' (Linux/Mac)
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - NOTE: To enable file post-processing, 'enablePostProcessFile' must be set to `true` (--enable-post-process-file for CLI).
+[main] INFO org.openapitools.codegen.InlineModelResolver - Inline schema created as updatePetWithForm_request. To have complete control of the model name, set the `title` field or use the inlineSchemaNameMapping option (--inline-schema-name-mappings in CLI).
+[main] INFO org.openapitools.codegen.InlineModelResolver - Inline schema created as uploadFile_request. To have complete control of the model name, set the `title` field or use the inlineSchemaNameMapping option (--inline-schema-name-mappings in CLI).
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation updatePet
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/json)
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation addPet
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/json)
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation findPetsByStatus
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation findPetsByTags
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation getPetById
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation updatePetWithForm
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation deletePet
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation uploadFile
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation getInventory
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation placeOrder
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation getOrderById
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation deleteOrder
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation createUser
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation createUsersWithArrayInput
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation createUsersWithListInput
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation loginUser
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation logoutUser
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation getUserByName
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation updateUser
+[main] INFO org.openapitools.codegen.languages.AbstractJavaCodegen - Processing operation deleteUser
+[main] WARN org.openapitools.codegen.languages.AbstractJavaCodegen - ApiResponse (reserved word) cannot be used as model name. Renamed to ModelApiResponse
+[main] INFO org.openapitools.codegen.DefaultGenerator - Model updatePetWithForm_request not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO org.openapitools.codegen.DefaultGenerator - Model uploadFile_request not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/Category.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/model/CategoryTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/docs/Category.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/ModelApiResponse.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/model/ModelApiResponseTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/docs/ModelApiResponse.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/Order.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/model/OrderTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/docs/Order.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/Pet.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/model/PetTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/docs/Pet.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/Tag.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/model/TagTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/docs/Tag.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/User.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/model/UserTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/docs/User.md
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/json)
+[main] WARN org.openapitools.codegen.languages.AbstractJavaCodegen - Multiple MediaTypes found, using only the first one
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/json)
+[main] WARN org.openapitools.codegen.languages.AbstractJavaCodegen - Multiple MediaTypes found, using only the first one
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] WARN org.openapitools.codegen.utils.ModelUtils - Multiple schemas found in the OAS 'content' section, returning only the first one (application/xml)
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/api/PetApi.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/api/PetApiTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/docs/PetApi.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/api/StoreApi.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/api/StoreApiTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/docs/StoreApi.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/api/UserApi.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/test/java/remote/org/openapitools/client/api/UserApiTest.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/docs/UserApi.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/pom.xml
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/README.md
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/build.gradle
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/build.sbt
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/settings.gradle
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/gradle.properties
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/AndroidManifest.xml
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/.travis.yml
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/ApiClient.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/ServerConfiguration.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/ServerVariable.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/.github/workflows/maven.yml
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/api/openapi.yaml
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/StringUtil.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/auth/HttpBasicAuth.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/auth/HttpBearerAuth.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/auth/ApiKeyAuth.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/gradlew
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/gradlew.bat
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/gradle/wrapper/gradle-wrapper.properties
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/gradle/wrapper/gradle-wrapper.jar
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/git_push.sh
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/.gitignore
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/ApiException.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/Configuration.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/Pair.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/auth/Authentication.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/JSON.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/ApiResponse.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/model/AbstractOpenApiSchema.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/RFC3339DateFormat.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/auth/OAuth.java
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/src/main/java/remote/org/openapitools/client/auth/OAuthFlow.java
+[main] INFO org.openapitools.codegen.TemplateManager - Skipped /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/.openapi-generator-ignore (Skipped by supportingFiles options supplied by user.)
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/.openapi-generator/VERSION
+[main] INFO org.openapitools.codegen.TemplateManager - writing file /tmp/test-classpath2166324619944332608/target/generated-sources/common-maven/remote-openapi/.openapi-generator/FILES
+]]></system-err>
+  </testcase>
+</testsuite>
