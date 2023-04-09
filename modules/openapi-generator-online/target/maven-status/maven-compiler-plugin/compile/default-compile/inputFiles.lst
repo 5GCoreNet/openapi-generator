@@ -1,0 +1,17 @@
+/gen/modules/openapi-generator-online/src/main/java/org/openapitools/codegen/online/OpenAPI2SpringBoot.java
+/gen/modules/openapi-generator-online/src/main/java/org/openapitools/codegen/online/api/GenApi.java
+/gen/modules/openapi-generator-online/src/main/java/org/openapitools/codegen/online/api/ApiUtil.java
+/gen/modules/openapi-generator-online/src/main/java/org/openapitools/codegen/online/api/GenApiController.java
+/gen/modules/openapi-generator-online/src/main/java/org/openapitools/codegen/online/service/Generator.java
+/gen/modules/openapi-generator-online/src/main/java/org/openapitools/codegen/online/api/ApiOriginFilter.java
+/gen/modules/openapi-generator-online/src/main/java/org/openapitools/codegen/online/model/GeneratorInput.java
+/gen/modules/openapi-generator-online/src/main/java/org/openapitools/codegen/online/service/ZipUtil.java
+/gen/modules/openapi-generator-online/src/main/java/org/openapitools/codegen/online/configuration/ParameterAllowableValuesPlugin.java
+/gen/modules/openapi-generator-online/src/main/java/org/openapitools/codegen/online/configuration/OpenAPIDocumentationConfig.java
+/gen/modules/openapi-generator-online/src/main/java/org/openapitools/codegen/online/model/ResponseCode.java
+/gen/modules/openapi-generator-online/src/main/java/org/openapitools/codegen/online/model/ApiResponse.java
+/gen/modules/openapi-generator-online/src/main/java/org/openapitools/codegen/online/model/Generated.java
+/gen/modules/openapi-generator-online/src/main/java/org/openapitools/codegen/online/service/GenApiService.java
+/gen/modules/openapi-generator-online/src/main/java/org/openapitools/codegen/online/RFC3339DateFormat.java
+/gen/modules/openapi-generator-online/src/main/java/org/openapitools/codegen/online/configuration/HomeController.java
+/gen/modules/openapi-generator-online/src/main/java/org/openapitools/codegen/online/api/GenApiDelegate.java

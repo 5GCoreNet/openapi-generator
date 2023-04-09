@@ -1,0 +1,15 @@
+/gen/modules/openapi-generator-cli/src/main/java/org/openapitools/codegen/cmd/ConfigHelp.java
+/gen/modules/openapi-generator-cli/src/main/java/org/openapitools/codegen/Constants.java
+/gen/modules/openapi-generator-cli/src/main/java/org/openapitools/codegen/cmd/BuildInfo.java
+/gen/modules/openapi-generator-cli/src/main/java/org/openapitools/codegen/cmd/ListGenerators.java
+/gen/modules/openapi-generator-cli/src/main/java/org/openapitools/codegen/OpenAPIGenerator.java
+/gen/modules/openapi-generator-cli/src/main/java/org/openapitools/codegen/cmd/CompletionCommand.java
+/gen/modules/openapi-generator-cli/src/main/java/org/openapitools/codegen/cmd/Meta.java
+/gen/modules/openapi-generator-cli/src/main/java/org/openapitools/codegen/cmd/Validate.java
+/gen/modules/openapi-generator-cli/src/main/java/org/openapitools/codegen/cmd/HelpCommand.java
+/gen/modules/openapi-generator-cli/src/main/java/org/openapitools/codegen/cmd/OpenApiGeneratorCommand.java
+/gen/modules/openapi-generator-cli/src/main/java/org/openapitools/codegen/cmd/Version.java
+/gen/modules/openapi-generator-cli/src/main/java/org/openapitools/codegen/cmd/AuthorTemplate.java
+/gen/modules/openapi-generator-cli/src/main/java/org/openapitools/codegen/cmd/GlobalOptions.java
+/gen/modules/openapi-generator-cli/src/main/java/org/openapitools/codegen/cmd/GenerateBatch.java
+/gen/modules/openapi-generator-cli/src/main/java/org/openapitools/codegen/cmd/Generate.java

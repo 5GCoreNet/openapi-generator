@@ -1,0 +1,4 @@
+/gen/modules/openapi-generator-maven-plugin/src/test/java/org/openapitools/codegen/plugin/stubs/CommonMavenProjectStub.java
+/gen/modules/openapi-generator-maven-plugin/src/test/java/org/openapitools/codegen/plugin/BaseTestCase.java
+/gen/modules/openapi-generator-maven-plugin/src/test/java/org/openapitools/codegen/plugin/CodeGenMojoTest.java
+/gen/modules/openapi-generator-maven-plugin/src/test/java/org/openapitools/codegen/plugin/stubs/StubUtility.java
